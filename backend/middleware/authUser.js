@@ -17,7 +17,9 @@ export const isAuthenticated = async(req,res,next)=>{
         return res.status(404).json({ error:"user not found"})
        }
        req.user=user
-        next();
+       next();
+       
+       
         
     } catch (error) {
         console.log("error occuring in authentication:"+error);

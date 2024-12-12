@@ -4,7 +4,7 @@ import { User } from "../models/user.model.js";
 
 const createTokenAndSaveCookies = async (userId, res) => {
   const token = jwt.sign({ userId }, process.env.JWT_SECRET_KEY, {
-    expiresIn: "30d",
+    expiresIn: "5d",
     
   });
   res.cookie("jwt", token, {

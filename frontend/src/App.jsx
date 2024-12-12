@@ -26,13 +26,13 @@ const App = () => {
 
 
 
-// const {blogs}= useAuth()
-// console.log(blogs);
+  const { blogs } = useAuth();
+  console.log("Blogs in App:", blogs);
 
-const { blogs, isAuthenticated } = useAuth();
-let token = localStorage.getItem("jwt"); // Retrieve the token directly from the localStorage to maininting the routes protect (Go to login.jsx)
-console.log(blogs);
-console.log(isAuthenticated); 
+// const { blogs, isAuthenticated } = useAuth();
+// let token = localStorage.getItem("jwt"); // Retrieve the token directly from the localStorage to maininting the routes protect (Go to login.jsx)
+// console.log(blogs);
+// console.log(isAuthenticated); 
 
 
   return (
